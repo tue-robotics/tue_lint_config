@@ -59,6 +59,6 @@ Standard: c++17
 SortIncludes:
   Enabled: true
   IgnoreCase: true
-  IgnoreExtension: true
+  # IgnoreExtension: true
 
 UseTab: Never
