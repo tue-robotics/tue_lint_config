@@ -1,0 +1,28 @@
+---
+# Based on ROS 2 code style and language versions
+# See: https://docs.ros.org/en/rolling/The-ROS2-Project/Contributing/Code-Style-Language-Versions.html
+BasedOnStyle: Google
+AccessModifierOffset: -2
+AlignAfterOpenBracket: AlwaysBreak
+BraceWrapping:
+  AfterClass: false
+  AfterControlStatement: false
+  AfterEnum: false
+  AfterFunction: false
+  AfterNamespace: false
+  AfterStruct: false
+  AfterUnion: false
+  BeforeCatch: false
+  BeforeElse: false
+BreakBeforeBraces: Custom
+ColumnLimit: 100
+ConstructorInitializerIndentWidth: 2
+ContinuationIndentWidth: 4
+DerivePointerAlignment: false
+PointerAlignment: Middle
+ReflowComments: true
+SortIncludes: true
+SpaceAfterCStyleCast: true
+Standard: c++17
+TabWidth: 2
+UseTab: Never
