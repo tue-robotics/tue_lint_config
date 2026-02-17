@@ -1,28 +1,64 @@
 ---
-# Based on ROS 2 code style and language versions
-# See: https://docs.ros.org/en/rolling/The-ROS2-Project/Contributing/Code-Style-Language-Versions.html
-BasedOnStyle: Google
-AccessModifierOffset: -2
-AlignAfterOpenBracket: AlwaysBreak
-BraceWrapping:
-  AfterClass: false
-  AfterControlStatement: false
-  AfterEnum: false
-  AfterFunction: false
-  AfterNamespace: false
-  AfterStruct: false
-  AfterUnion: false
-  BeforeCatch: false
-  BeforeElse: false
-BreakBeforeBraces: Custom
-ColumnLimit: 100
-ConstructorInitializerIndentWidth: 2
-ContinuationIndentWidth: 4
-DerivePointerAlignment: false
-PointerAlignment: Middle
-ReflowComments: true
-SortIncludes: true
-SpaceAfterCStyleCast: true
+BasedOnStyle: LLVM
+
+AccessModifierOffset: -4
+AlignAfterOpenBracket: true
+AlignArrayOfStructures: None
+AlignConsecutiveAssignments: None
+AlignConsecutiveBitFields: Consecutive
+AlignConsecutiveDeclarations: None
+AlignConsecutiveMacros: Consecutive
+AlignConsecutiveShortCaseStatements:
+  Enabled: false
+AlignOperands: Align
+AlignTrailingComments: false
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowShortBlocksOnASingleLine: Always
+AllowShortCaseExpressionOnASingleLine: true
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLambdasOnASingleLine: All
+AllowShortNamespacesOnASingleLine: true
+AlwaysBreakBeforeMultilineStrings: true
+
+BinPackArguments: false
+BinPackLongBracedList: true
+BinPackParameters: OnePerLine
+BitFieldColonSpacing: None
+BreakAdjacentStringLiterals: true
+BreakAfterAttributes: Always
+# BreakAfterOpenBracketBracedList: true
+# BreakAfterOpenBracketFunction: true
+# BreakAfterOpenBracketIf: true
+# BreakAfterOpenBracketLoop: true
+# BreakAfterOpenBracketSwitch: true
+BreakAfterReturnType: ExceptShortType
+BreakBeforeBinaryOperators: None
+BreakBeforeBraces: Allman
+BreakBeforeTemplateCloser: true
+BreakBeforeTernaryOperators: true
+BreakConstructorInitializers: AfterColon
+BreakFunctionDefinitionParameters: false
+BreakInheritanceList: AfterColon
+
+ColumnLimit: 120
+
+IndentAccessModifiers: false
+InsertNewlineAtEOF: true
+IndentWidth: 4
+
+NamespaceIndentation: None
+
+PointerAlignment: Left
+
+ReflowComments: Always
+
 Standard: c++17
-TabWidth: 2
+SortIncludes:
+  Enabled: true
+  IgnoreCase: true
+  IgnoreExtension: true
+
 UseTab: Never
