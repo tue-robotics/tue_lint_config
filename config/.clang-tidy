@@ -82,3 +82,9 @@ CheckOptions:
     value:           lower_case
   - key:             readability-identifier-naming.ConstantCase
     value:           UPPER_CASE
+  # ConstantCase applies to ALL const-qualified entities, including const local
+  # variables and const function parameters (no LocalConstantCase/ConstantParameterCase
+  # override is set). Requiring UPPER_CASE for those directly conflicts with
+  # misc-const-correctness, which adds const to ordinary lower_case locals. Disabled.
+  - key:             readability-identifier-naming.LocalConstantCase
+    value:           lower_case
